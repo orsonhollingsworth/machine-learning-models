@@ -1,0 +1,28 @@
+{
+  "serviceName": "machine-learning-models",
+  "timestamp": "2024-10-27T10:00:00Z",
+  "status": "healthy",
+  "modelVersion": "v1.2.3",
+  "uptimeSeconds": 3600,
+  "cpuUtilization": 0.15,
+  "memoryUtilization": 0.60,
+  "diskSpaceAvailableGB": 50.0,
+  "activeRequests": 10,
+  "queueLength": 2,
+  "lastDeployment": "2024-10-26T18:00:00Z",
+  "dependencies": [
+    {
+      "name": "database",
+      "status": "healthy"
+    },
+    {
+      "name": "messageQueue",
+      "status": "warning",
+      "details": "High latency"
+    }
+  ],
+  "customMetrics": {
+    "averageInferenceTimeMs": 25.5,
+    "requestsPerSecond": 5.2
+  }
+}
